@@ -15,7 +15,7 @@ html {
 /* Remove default margin in favour of better control in authored CSS */
 body, h1, h2, h3, h4, p,
 figure, blockquote, dl, dd {
-  margin-block-end: 0;
+  margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -70,6 +70,9 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+
+/* Typography */ 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400|Playfair+Display:400');
 
 html {font-size: 100%;} /*16px*/
@@ -78,29 +81,37 @@ body {
   background: #000000;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  line-height: 1.75;
-  color: white;
+  line-height: 1.5;
+  color: #ffffff;
 }
 
-p {margin-bottom: 1rem;}
+main {
+  border: 1px solid white; 
+  width:700px;
+  margin-inline: auto;
+  padding: 0px 10px;
+}
 
 h1, h2, h3, h4, h5 {
-  margin: 3rem 0 1.38rem;
+  margin: 16px 0;
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   line-height: 1.3;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: 3.052rem;
+  font-size: 2.488rem;
 }
 
-h2 {font-size: 2.441rem;}
+h2 {font-size: 2.074rem;}
 
-h3 {font-size: 1.953rem;}
+h3 {font-size: 1.728rem;}
 
-h4 {font-size: 1.563rem;}
+h4 {font-size: 1.44rem;}
 
-h5 {font-size: 1.25rem;}
+h5 {font-size: 1.2rem;}
 
+p {
+  margin-bottom: 16px;
+  color: #999;
+}
